@@ -1,0 +1,87 @@
+/* Set the background image for the body */
+body {
+    background: url('photo-1506968430777-bf7784a87f23.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the calculator */
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    max-width: 250px;
+    margin: 100px auto;
+    padding: 15px;
+    background: #333;
+    border: 5px solid #555;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Style the display */
+#display {
+    grid-column: span 4;
+    background: #000;
+    color: #0f0;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 5px;
+    border: 2px solid #444;
+}
+
+/* Style the buttons */
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background 0.2s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background: #666;
+}
+
+/* Active effect for buttons */
+button:active {
+    background: #888;
+}
+
+/* Clear button special styling */
+#clear {
+    background: #c0392b;
+}
+
+#clear:hover {
+    background: #e74c3c;
+}
+
+/* Backspace button styling */
+#backspace {
+    background: #d35400;
+}
+
+#backspace:hover {
+    background: #e67e22;
+}
+
+/* Footer text styling */
+#footer-text {
+    grid-column: span 4;
+    text-align: right;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 10px;
+    font-style: italic;
+    padding-right: 10px;
+}
